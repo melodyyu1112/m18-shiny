@@ -23,7 +23,12 @@ shinyUI(navbarPage('Electoral College',
                    ) 
                    
                    # Create a tabPanel to show your scatter plot
-                   
+                   tabPanel("scatter",
+                            titlePanel("A scatter plot"),
+                            sidebarLayout(
+                              sidebarPanel()
+                            )
+                            )
                             # Add a titlePanel to your tab
                    
                             

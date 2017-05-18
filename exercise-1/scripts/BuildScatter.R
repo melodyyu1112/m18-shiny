@@ -1,5 +1,12 @@
 # Function to build a scatterplot
-
+library(ggplot2)
+BuildScatter <- Function(data, x, y, color) {
+  ggplot(data, aes(x=x, y=y)) + geom_point(color = color) +
+  labs(title = "Title",
+        x = "X Title",
+        y = "Y Title"
+        )
+}
 # Write your function to parameterize the following variables:
 #   - Data to use
 #   - Variable for the x axis
